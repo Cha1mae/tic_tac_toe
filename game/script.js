@@ -26,9 +26,11 @@ function handleCellClick(event) {
     const winner = checkWinner();
     if (winner) {
         alert(`Player ${winner} wins!`);
+        triggerConfetti(); // Add this line
         resetGame();
     } else if (isBoardFull()) {
         alert("It's a draw!");
+        triggerConfetti(); // And this line
         resetGame();
     } else {
         // Switch players
@@ -45,4 +47,25 @@ function resetGame() {
 // Function to switch players
 function switchPlayer() {
     currentPlayer = currentPlayer === PLAYER_X ? PLAYER_O : PLAYER_X; // Assuming PLAYER_O is defined in game-logic.js
+}
+// Function to trigger confetti effect
+function triggerConfetti() {
+    const confettiContainer = document.getElementById('confetti-container');
+    const confettiCount = 100;
+    const colors = ['blue', 'pink', 'red'];
+    const animationDuration = 15;
+
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.classList.add(colors[Math.floor(Math.random() * colors.length)]); // Assign random color
+        confetti.style.left = Math.random() * window.innerWidth + 'px';
+        confetti.style.animationDelay = Math.random() * 3 + 's';
+        confettiContainer.appendChild(confetti);
+
+        // Remove confetti element after animation ends
+        setTimeout(() => {
+            confetti.remove();
+        }, animationDuration * 1000);
+    }
 }
