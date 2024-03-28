@@ -57,3 +57,35 @@ h1 {
 #reset-button:hover {
     background-color: #444;
 }
+
+/* Confetti animation */
+@keyframes confetti-fall {
+    10% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    animation: confetti-fall 30s ease-out infinite;
+}
+
+.confetti.blue {
+    background-color: #5090e2;
+}
+
+.confetti.pink {
+    background-color: #c943c9;
+}
+
+.confetti.red {
+    background-color: #ff93b3;
+}
