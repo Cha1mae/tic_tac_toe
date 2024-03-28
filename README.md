@@ -1,4 +1,4 @@
-                                          X  Tic Tac Toe  0
+                                  X  Tic Tac Toe  0
 ![Tic Tac Toe Gameplay](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXFzODZidWpsdWFsMmlkbmhkMm5icWg3ZmM4amR3c3lheGc4YnpkMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gR92EF4p9XyEHyD2n5/giphy.gif)
 # Description
 - Tic Tac Toe is a classic paper-and-pencil game where two players take turns marking spaces in a 3x3 grid with their respective symbols. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
