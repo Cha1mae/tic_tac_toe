@@ -17,37 +17,31 @@ function handleCellClick(event) {
     const row = event.target.dataset.row;
     const col = event.target.dataset.col;
 
-    if (!makeMove(row, col)) {
+    if (!makeMove(row, col, currentPlayer)) { // Current player makes a move
         // Invalid move
         return;
     }
 
-    // Check for winner or draw
     const winner = checkWinner();
     if (winner) {
         alert(`Player ${winner} wins!`);
-        triggerConfetti(); // Add this line
+        triggerConfetti();
         resetGame();
     } else if (isBoardFull()) {
         alert("It's a draw!");
-        triggerConfetti(); // And this line
         resetGame();
     } else {
-        // Switch players
-        switchPlayer();
+        // Player made move, now AI moves
+        makeAIMove();
     }
 }
 
 // Reset the game
 function resetGame() {
     resetBoard();
-    currentPlayer = PLAYER_X; // Assuming PLAYER_X is defined in game-logic.js
+    currentPlayer = PLAYER_X; // Player starts the game
 }
 
-// Function to switch players
-function switchPlayer() {
-    currentPlayer = currentPlayer === PLAYER_X ? PLAYER_O : PLAYER_X; // Assuming PLAYER_O is defined in game-logic.js
-}
 // Function to trigger confetti effect
 function triggerConfetti() {
     const confettiContainer = document.getElementById('confetti-container');
@@ -58,7 +52,7 @@ function triggerConfetti() {
     for (let i = 0; i < confettiCount; i++) {
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
-        confetti.classList.add(colors[Math.floor(Math.random() * colors.length)]); // Assign random color
+        confetti.classList.add(colors[Math.floor(Math.random() * colors.length)]);
         confetti.style.left = Math.random() * window.innerWidth + 'px';
         confetti.style.animationDelay = Math.random() * 3 + 's';
         confettiContainer.appendChild(confetti);

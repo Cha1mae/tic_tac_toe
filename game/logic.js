@@ -1,6 +1,6 @@
 // Define the players
 const PLAYER_X = 'X';
-const PLAYER_O = 'O';
+const PLAYER_O = '0'; //symbol for the AI
 
 // Current player
 let currentPlayer = PLAYER_X;
@@ -13,10 +13,10 @@ let board = [
 ];
 
 // Function to make a move on the game board
-function makeMove(row, col) {
+function makeMove(row, col, player) {
     if (board[row][col] === '') {
         // Update the board with the current player's symbol
-        board[row][col] = currentPlayer;
+        board[row][col] = player;
         updateCell(row, col);
         return true; // Move successful
     }
@@ -26,7 +26,7 @@ function makeMove(row, col) {
 // Function to update the cell on the HTML board
 function updateCell(row, col) {
     const cell = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
-    cell.textContent = currentPlayer;
+    cell.textContent = board[row][col];
 }
 
 // Function to check for a winner
@@ -82,4 +82,7 @@ function resetBoard() {
     cells.forEach(cell => {
         cell.textContent = '';
     });
+
+    // Set initial player to 'X'
+    currentPlayer = PLAYER_X;
 }
