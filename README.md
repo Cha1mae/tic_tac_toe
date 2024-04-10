@@ -15,7 +15,8 @@
 - Confetti Animation: Used to provide a celebratory effect when a player wins.
 - DOM Manipulation: JavaScript is used to manipulate the Document Object Model to update the game board and handle user interactions.
 - Randomized AI Logic: The AI opponent makes moves randomly from available empty spaces on the board.
-  
+# Instalation
+Clone this repository to your local machine
 # How to Play
 - Open the game in a web browser.
 - Click on any empty cell on the game board to make your move.
@@ -32,4 +33,12 @@ To run the game locally or make modifications:
 - If making significant changes, consider using a local development server.
 
 # Credits
-This Tic Tac Toe game is created by Me, am so proud of my self since this is my first project :) 
+This Tic Tac Toe game is created by Me, am so proud of my self since this is my first project :)  Chaima Staifa. 
+
+- Game link : https://cha1mae.github.io/tic_tac_toe/game.html
+- Post blog : https://www.linkedin.com/pulse/portfolio-project-blog-post-chaima-s--me31e/
+- Project landing page : https://chaimastaifa.wixsite.com/tic-tac-toe-master
+
+# Screenshot 
+
+![v](https://github.com/Cha1mae/tic_tac_toe/assets/136852805/a177f529-5697-429e-91ef-1b00f375a3ea)
