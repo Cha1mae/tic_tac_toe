@@ -33,7 +33,6 @@ To run the game locally or make modifications:
 - If making significant changes, consider using a local development server.
 
 # Personal Story 
-Personal Story 
 Tic Tac Toe Master is more than just a game to me; it’s a culmination of cherished childhood memories and a testament to my dedication to innovation. From a young age, I dreamed of becoming a game developer, inspired by the joy games brought to my life. Growing up, I spent countless hours strategizing over Tic Tac Toe matches with friends and family, each game sparking laughter and friendly competition. These moments left an indelible mark on me, igniting a passion for game design that continues to drive me today.
 
 This project allowed me to revisit those cherished memories, infusing them with modern technology and design principles to create something truly special and close to my heart. As I embarked on this journey, I envisioned more than just a game; I envisioned a path towards realizing my dream of becoming a respected game developer. Tic Tac Toe Master is a stepping stone towards that dream, a manifestation of my commitment to crafting innovative experiences that resonate with players.
