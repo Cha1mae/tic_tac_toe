@@ -32,6 +32,18 @@ To run the game locally or make modifications:
 - Start playing or make changes to the code as needed.
 - If making significant changes, consider using a local development server.
 
+# Personal Story 
+Personal Story 
+Tic Tac Toe Master is more than just a game to me; it’s a culmination of cherished childhood memories and a testament to my dedication to innovation. From a young age, I dreamed of becoming a game developer, inspired by the joy games brought to my life. Growing up, I spent countless hours strategizing over Tic Tac Toe matches with friends and family, each game sparking laughter and friendly competition. These moments left an indelible mark on me, igniting a passion for game design that continues to drive me today.
+
+This project allowed me to revisit those cherished memories, infusing them with modern technology and design principles to create something truly special and close to my heart. As I embarked on this journey, I envisioned more than just a game; I envisioned a path towards realizing my dream of becoming a respected game developer. Tic Tac Toe Master is a stepping stone towards that dream, a manifestation of my commitment to crafting innovative experiences that resonate with players.
+
+My aspiration is to leave a lasting impact on the gaming industry, to be known for creating engaging, thoughtfully designed games that bring joy and inspiration to players worldwide. Tic Tac Toe Master represents not only a technical achievement but also a personal milestone—a tribute to the childlike wonder that first ignited my passion for game development.
+
+Through this project, I've learned that game design is not just about coding and algorithms; it's about storytelling, creativity, and empathy. Each line of code and every design choice is an opportunity to connect with players on a deeper level, to evoke emotions and create memorable experiences.
+
+As I continue to hone my skills and explore new horizons in game development, I am excited for the future, eager to contribute my unique voice to the ever-evolving landscape of interactive entertainment. Tic Tac Toe Master is just the beginning of my journey, and I am determined to carve out a path that leads to a fulfilling career in game development—one where my creations inspire and resonate for years to come.
+
 # Credits
 This Tic Tac Toe game is created by Me, am so proud of my self since this is my first project :)  Chaima Staifa. 
 
@@ -42,3 +54,4 @@ This Tic Tac Toe game is created by Me, am so proud of my self since this is my 
 # Screenshot 
 
 ![v](https://github.com/Cha1mae/tic_tac_toe/assets/136852805/a177f529-5697-429e-91ef-1b00f375a3ea)
+
